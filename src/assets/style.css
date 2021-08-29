@@ -1,0 +1,1 @@
+/* I dislike the poor accessibility of "scoped" CSS that lives in each Vue component. In a real project I'd take the time to set up a SCSS pipeline so the styles could be broken down into modules. */

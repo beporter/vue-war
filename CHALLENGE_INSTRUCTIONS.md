@@ -2,7 +2,7 @@
 
 Implement one round of the card game War using the API found at deckofcardsapi.com. Your game. should work like this:
 
-* [ ] User presses a "Start Game" button to start the game
+* [x] User presses a "Start Game" button to start the game
 * [ ] Your program requests a new deck of cards from the API (player A)
 * [ ] Your program requests a second new deck of cards from the API (player B)
 * [ ] Your program draws one card from each deck and displays the cards on screen
