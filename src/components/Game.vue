@@ -55,7 +55,7 @@ export default {
   methods: {
     fetchDeck() {
       return axios
-        .get('http://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1')
+        .get('//deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1')
         .then((response) => {
           return response.data;
         });
@@ -63,7 +63,7 @@ export default {
     },
     fetchNextCard(deck) {
       return axios
-        .get(`http://deckofcardsapi.com/api/deck/${deck.deck_id}/draw/?count=1`)
+        .get(`//deckofcardsapi.com/api/deck/${deck.deck_id}/draw/?count=1`)
         .then((response) => {
           if(response.data.remaining == 0) {
             this.gameOver = true;
