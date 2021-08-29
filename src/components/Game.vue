@@ -20,9 +20,6 @@ import axios from 'axios';
 import Player from './Player.vue';
 import Scoreboard from './Scoreboard.vue';
 
-// Order matters for scoring here.
-const CARD_VALUES = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'JACK', 'QUEEN', 'KING', 'ACE'];
-
 export default {
   name: 'Game',
   components: {
@@ -83,9 +80,13 @@ export default {
       Promise.all(promises).then(this.scoreRound);
     },
     scoreRound() {
+      // Order matters for scoring here.
+      const CARD_VALUES = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'JACK', 'QUEEN', 'KING', 'ACE'];
+
       let maxValue = -1;
       let maxValueIndex = -1;
       this.cards.forEach((card, i) => {
+        // TODO: If values are the same, abort early!
         if (CARD_VALUES.indexOf(card.value) > maxValue) {
           maxValue = card.value;
           maxValueIndex = i;
