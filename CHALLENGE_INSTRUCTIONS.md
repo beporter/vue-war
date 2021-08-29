@@ -3,14 +3,14 @@
 Implement one round of the card game War using the API found at deckofcardsapi.com. Your game. should work like this:
 
 * [x] User presses a "Start Game" button to start the game
-* [ ] Your program requests a new deck of cards from the API (player A)
-* [ ] Your program requests a second new deck of cards from the API (player B)
-* [ ] Your program draws one card from each deck and displays the cards on screen
-* [ ] Whichever player has the higher card gets a point (Aces are high)
-* [ ] The point total for each player is displayed
-* [ ] User presses a "Draw Cards" button to continue the game
-* [ ] Repeat steps 4 through 7 until no cards remain
-* [ ] Display which player won
+* [x] Your program requests a new deck of cards from the API (player A)
+* [x] Your program requests a second new deck of cards from the API (player B)
+* [x] Your program draws one card from each deck and displays the cards on screen
+* [x] Whichever player has the higher card gets a point (Aces are high)
+* [x] The point total for each player is displayed
+* [x] User presses a "Draw Cards" button to continue the game
+* [x] Repeat steps 4 through 7 until no cards remain
+* [x] Display which player won
 
 In this simplified version, if there is a tie (both players draw identical cards), neither player gets a point.
 
